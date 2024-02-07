@@ -1,58 +1,49 @@
 <script lang="ts">
 </script>
 
-<h1>Tic Tac Toe</h1>
+<h1 class=" text-4xl flex items-center justify-center">Tic Tac Toe</h1>
 
-<div
-	class="flex flex-wrap h-full justify-center content-center max-w-2xl bg-slate-50"
-	id="gameboard"
->
-	<div class="h-56 w-56 border-r-4 border-b-4 flex items-center justify-center" id="0"></div>
-	<div
-		class="h-56 w-56 border-r-4 border-b-4 flex items-center justify-center bg-transparent"
-		id="1"
-	></div>
-	<div class="h-56 w-56 border-b-4 flex items-center justify-center bg-transparent" id="2"></div>
-	<div
-		class="h-56 w-56 border-b-4 border-r-4 flex items-center justify-center bg-transparent"
-		id="3"
-	></div>
-	<div
-		class="h-56 w-56 border-b-4 border-r-4 flex items-center justify-center bg-transparent"
-		id="4"
-	></div>
-	<div class="h-56 w-56 border-b-4 flex items-center justify-center bg-transparent" id="5"></div>
-	<div class="h-56 w-56 border-r-4 flex items-center justify-center bg-transparent" id="6"></div>
-	<div class="h-56 w-56 border-r-4 flex items-center justify-center bg-transparent" id="7"></div>
-	<div class="h-56 w-56 flex items-center justify-center bg-transparent" id="8"></div>
-</div>
+<section class=" mt-40 p-5">
+	<div class="flex justify-center relative">
+		<div class="board grid grid-cols-3" id="board">
+			<div
+				id="0"
+				class="cell w-20 h-20 md:w-32 md:h-32 text-3xl flex items-center justify-center"
+			></div>
+			<div
+				id="1"
+				class="cell border-x border-black dark:border-white w-20 h-20 md:w-32 md:h-32 text-3xl flex items-center justify-center"
+			></div>
+			<div
+				id="2"
+				class="cell w-20 h-20 md:w-32 md:h-32 text-3xl flex items-center justify-center"
+			></div>
+			<div
+				id="3"
+				class="cell border-y border-black dark:border-white w-20 h-20 md:w-32 md:h-32 text-3xl flex items-center justify-center"
+			></div>
+			<div
+				id="4"
+				class="cell border border-black dark:border-white w-20 h-20 md:w-32 md:h-32 text-3xl flex items-center justify-center"
+			></div>
+			<div
+				id="5"
+				class="cell border-y border-black dark:border-white w-20 h-20 md:w-32 md:h-32 text-3xl flex items-center justify-center"
+			></div>
+			<div
+				id="6"
+				class="cell w-20 h-20 md:w-32 md:h-32 text-3xl flex items-center justify-center"
+			></div>
+			<div
+				id="7"
+				class="cell border-x border-black dark:border-white w-20 h-20 md:w-32 md:h-32 text-3xl flex items-center justify-center"
+			></div>
+			<div
+				id="8"
+				class="cell w-20 h-20 md:w-32 md:h-32 text-3xl flex items-center justify-center"
+			></div>
+		</div>
 
-<!-- <style>
-	.box {
-		height: 150px;
-		width: 150px;
-		color: #0b9d43;
-		border-right: 2px solid;
-		border-bottom: 2px solid;
-	}
-
-	.box:nth-child(3n) {
-		border-right: none;
-	}
-	.box:nth-last-child(-n + 3) {
-		border-bottom: none;
-	}
-
-	#gameboard div {
-		background-color: #f0f0f0;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		font-size: 2em;
-		cursor: pointer;
-	}
-
-	#gameboard div:hover {
-		background-color: #e0e0e0;
-	}
-</style> -->
+		<div id="win-line"></div>
+	</div>
+</section>
