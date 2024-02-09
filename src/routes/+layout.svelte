@@ -6,6 +6,11 @@
 	import MdiWeatherNight from 'virtual:icons/mdi/weather-night';
 </script>
 
+<svelte:head>
+	<title>Home</title>
+	<meta name="description" content="Home page" />
+</svelte:head>
+
 <Button on:click={toggleMode} variant="outline" size="icon">
 	<MdiWeatherNight
 		class="absolute h-[1.2rem] w-[1.2rem] scale-100 transition-all dark:rotate-0 dark:scale-0"
